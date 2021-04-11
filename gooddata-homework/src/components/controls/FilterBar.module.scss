@@ -1,0 +1,9 @@
+@import "../../theme.scss";
+
+.FilterBar {
+  display: block;
+  color: $color-text-muted;
+  font-size: inherit;
+  text-transform: uppercase;
+  font-weight: 500;
+}
