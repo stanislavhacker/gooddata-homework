@@ -33,9 +33,9 @@ const CalculationView: React.FC<{ selectedFilterOption: DateFilterOption, exclud
 						<>
 							<h5>{t(locales, "Select calculation")}</h5>
 							<div className={styles.CalculationSelects}>
-								<select onChange={(e) => setState({ selected: e.target.value })}>
-									{SelectableCalculations.map((calc) => (
-										<option value={calc.id} selected={current.id === calc.id}>{calc.name}</option>
+								<select onChange={(e) => setState({ selected: e.target.value })} defaultValue={current.id}>
+									{SelectableCalculations.map((calc, i) => (
+										<option key={i} value={calc.id}>{calc.name}</option>
 									))}
 								</select>
 							</div>

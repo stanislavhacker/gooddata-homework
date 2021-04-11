@@ -1,0 +1,16 @@
+@import "../theme.scss";
+
+.Lead {
+  margin: 0;
+  text-align: left;
+  color: $color-success;
+}
+
+.Project {
+  display: flex;
+  align-items:center;
+}
+
+.Project p {
+  margin-left: 5px;
+}
