@@ -9,6 +9,9 @@ const Links: React.FC = () => {
             <NavLink to={"/"} className={styles.Link} activeClassName={styles.LinkActive} exact>
                 Home
             </NavLink>
+            <NavLink to={"/dashboard"} className={styles.Link} activeClassName={styles.LinkActive} exact>
+                Dashboard
+            </NavLink>
         </>
     );
 };
