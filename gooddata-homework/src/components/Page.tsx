@@ -2,6 +2,8 @@ import React from "react";
 import Helmet from "react-helmet";
 import cx from "classnames";
 
+import { appName } from "../constants";
+
 import Header from "./Header/Header";
 import Footer from "./Footer";
 
@@ -17,7 +19,7 @@ const Page: React.FC<IPageProps> = ({
     children,
     className = null,
     mainClassName = null,
-    title = "GoodData App",
+    title = appName,
 }) => {
     return (
         <div className={cx(styles.Page, className)}>

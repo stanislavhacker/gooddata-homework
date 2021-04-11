@@ -1,11 +1,6 @@
 import React, { useState, useEffect, useCallback } from "react";
 import throttle from "lodash/throttle";
 
-import { useAuth } from "../../contexts/Auth";
-import { AuthStatus } from "../../contexts/Auth/state";
-// uncomment the next line to use WorkspacePicker
-// import WorkspacePicker from "../controls/WorkspacePicker";
-
 import Logo from "./Logo";
 import Links from "./Links";
 import Aside from "./Aside";
@@ -15,13 +10,6 @@ import styles from "./Header.module.scss";
 const VerticalDelimiter: React.FC = ({ ...restProps }) => (
     <div className={styles.VerticalDelimiter} {...restProps} />
 );
-
-// a wrapper for items visible to authenticated users only (e.g. WorkspacePicker)
-const ProtectedItems: React.FC = ({ children }) => {
-    const { authStatus } = useAuth();
-    if (authStatus !== AuthStatus.AUTHORIZED) return null;
-    return <>{children || null}</>;
-};
 
 const BurgerMenu: React.FC = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -38,12 +26,6 @@ const BurgerMenu: React.FC = () => {
             {isOpen && (
                 <div className={styles.BurgerContent}>
                     <Links />
-                    <ProtectedItems>
-                        {/* Uncomment these lines to add a workspace picker into the burger menu */}
-                        {/* <div className={styles.Centered}>
-                            <WorkspacePicker />
-                        </div> */}
-                    </ProtectedItems>
                 </div>
             )}
         </div>
@@ -80,12 +62,6 @@ const Header: React.FC = () => {
                 </>
             ) : (
                 <>
-                    <ProtectedItems>
-                        {/* Uncomment these lines to add a workspace picker into the menu */}
-                        {/* <div className={`${styles.Centered} ${styles.Link}`}>
-                            <WorkspacePicker />
-                        </div> */}
-                    </ProtectedItems>
                     <Logo />
                     <VerticalDelimiter />
                     <Links />
