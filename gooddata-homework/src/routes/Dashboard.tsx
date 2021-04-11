@@ -2,13 +2,14 @@ import React, {useState} from "react";
 import {DateFilterOption} from "@gooddata/sdk-ui-filters/esm/DateFilter/interfaces";
 
 import {defaultDateFilterOptions} from "../constants";
+import {LocalesContext, LocalesState, t} from "../contexts/Locales";
 
 import Page from "../components/Page";
 import styles from "./Dashboard.module.scss";
 
 import FilterBar from "../components/controls/FilterBar";
 import DateFilter from "../components/controls/DateFilter";
-import {LocalesContext, LocalesState, t} from "../contexts/Locales";
+import {LineChart} from "../components/controls/LineChart";
 
 const PREFIX = "My Dashboard";
 const NOT_SELECTED = "ALL_TIME";
@@ -38,6 +39,16 @@ const Dashboard: React.FC = () => {
 					onApply={onApply}
 				/>
 			</FilterBar>
+			<div className={styles.Grid}>
+				<div className={styles.GridItem}>
+					<LineChart
+						excludeCurrentPeriod={state.excludeCurrentPeriod}
+						selectedFilterOption={state.selectedFilterOption}
+					/>
+				</div>
+				<div className={styles.GridItem}>
+				</div>
+			</div>
 		</Page>
 	);
 };

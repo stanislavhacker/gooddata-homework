@@ -5,3 +5,27 @@
   text-align: left;
   color: $color-success;
 }
+
+.Grid {
+  display: flex;
+}
+
+.GridItem {
+  box-sizing: border-box;
+  padding: 20px;
+  flex: 3;
+}
+
+.GridItem:nth-child(2) {
+  flex: 1;
+}
+
+//determined from src/components/Header/Header.tsx:55
+@media screen and (max-width:666px) {
+  .Grid {
+    flex-wrap: wrap;
+  }
+  .GridItem:first-child {
+    flex-basis: 100%;
+  }
+}
