@@ -1,0 +1,35 @@
+@import "../../theme.scss";
+
+.Grid {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  min-height: 200px;
+}
+
+.Total {
+  box-sizing: border-box;
+  flex: 3;
+}
+
+.Select {
+  flex: 1;
+}
+
+.CalculationSelects select {
+  background: transparent;
+  font-size: 20px;
+  width: 100%;
+  border: 1px solid transparent;
+  height: 34px;
+  outline: none;
+}
+.CalculationSelects {
+  margin: 10px;
+  width: calc(100% - 20px);
+  height: 35px;
+  border: 1px solid #111;
+  border-radius: 3px;
+  overflow: hidden;
+  background: white;
+}

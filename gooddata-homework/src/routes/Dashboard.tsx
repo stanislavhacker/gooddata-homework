@@ -9,9 +9,9 @@ import styles from "./Dashboard.module.scss";
 
 import FilterBar from "../components/controls/FilterBar";
 import DateFilter from "../components/controls/DateFilter";
+import CalculationView from "../components/controls/CalculationView";
 import {LineChart} from "../components/controls/LineChart";
 
-const PREFIX = "My Dashboard";
 const NOT_SELECTED = "ALL_TIME";
 
 const Dashboard: React.FC = () => {
@@ -29,26 +29,36 @@ const Dashboard: React.FC = () => {
 
 	return (
 		<Page>
-			<div className={styles.Lead}>
-				<h1>{PREFIX} "<DashboardName selectedFilterOption={state.selectedFilterOption} />"</h1>
-			</div>
-			<FilterBar>
-				<DateFilter
-					excludeCurrentPeriod={state.excludeCurrentPeriod}
-					selectedFilterOption={state.selectedFilterOption}
-					onApply={onApply}
-				/>
-			</FilterBar>
-			<div className={styles.Grid}>
-				<div className={styles.GridItem}>
-					<LineChart
-						excludeCurrentPeriod={state.excludeCurrentPeriod}
-						selectedFilterOption={state.selectedFilterOption}
-					/>
-				</div>
-				<div className={styles.GridItem}>
-				</div>
-			</div>
+			<LocalesContext.Consumer>
+				{(locales) => (
+					<>
+						<div className={styles.Lead}>
+							<h1>{t(locales, "My Dashboard")} "<DashboardName selectedFilterOption={state.selectedFilterOption} />"</h1>
+						</div>
+						<FilterBar>
+							<DateFilter
+								excludeCurrentPeriod={state.excludeCurrentPeriod}
+								selectedFilterOption={state.selectedFilterOption}
+								onApply={onApply}
+							/>
+						</FilterBar>
+						<div className={styles.Grid}>
+							<div className={styles.GridItem}>
+								<LineChart
+									excludeCurrentPeriod={state.excludeCurrentPeriod}
+									selectedFilterOption={state.selectedFilterOption}
+								/>
+							</div>
+							<div className={styles.GridItem}>
+								<CalculationView
+									excludeCurrentPeriod={state.excludeCurrentPeriod}
+									selectedFilterOption={state.selectedFilterOption}
+								/>
+							</div>
+						</div>
+					</>
+				)}
+			</LocalesContext.Consumer>
 		</Page>
 	);
 };

@@ -189,6 +189,7 @@ export const defaultDateFilterOptions: IDateFilterOptionsByType = {
 
 //Default locales for app
 export const Locales = {
+	"My Dashboard": "My Dashboard",
 	"ALL_TIME": "All time",
 	"LAST_7_DAYS": "Last 7 days",
 	"LAST_30_DAYS": "Last 30 days",
