@@ -1,12 +1,13 @@
 import React from "react";
-//import { shallow } from "enzyme";
+import { shallow } from "enzyme";
 
-//import LineChart from "../FilterBar";
+import {LineChart} from "../LineChart";
+import {defaultDateFilterOptions} from "../../../constants";
 
 describe("LineChart component", () => {
-	xit("should render type correctly", () => {
-		// const type = "number";
-		// const wrapper = shallow(<Input type={type} />);
-		// expect(wrapper.find({ type })).toHaveLength(1);
+	it("should render correctly", () => {
+		const wrapper = shallow(<LineChart excludeCurrentPeriod={false} selectedFilterOption={defaultDateFilterOptions.allTime!}/>);
+		expect(wrapper.children().length).toBe(1);
+		expect(wrapper.children().text()).toBe("<withChart(withContexts(withBackend(withWorkspace(withChartDefinition(CoreLineChart))))) />");
 	});
 });
