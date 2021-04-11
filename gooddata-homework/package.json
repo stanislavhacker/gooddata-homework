@@ -32,7 +32,7 @@
         "test": "react-scripts test --setupFilesAfterEnv ./jest.setup.js",
         "testcafe-backend": "rm -R ./build & yarn build & serve -l 5000 build",
         "testcafe": "cross-env TEST_BACKEND=http://localhost:5000 ./scripts/run-testcafe.js",
-        "testcafe-visual": "cross-env TEST_MODE=visual ./scripts/run-testcafe.js",
+        "testcafe-visual": "cross-env TEST_BACKEND=http://localhost:5000 TEST_MODE=visual ./scripts/run-testcafe.js",
         "refresh-ldm": "node ./scripts/refresh-ldm.js"
     },
     "eslintConfig": {
