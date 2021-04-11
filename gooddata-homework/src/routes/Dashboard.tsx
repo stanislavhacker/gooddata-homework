@@ -1,4 +1,5 @@
 import React, {useState} from "react";
+import {DateFilterOption} from "@gooddata/sdk-ui-filters/esm/DateFilter/interfaces";
 
 import {defaultDateFilterOptions} from "../constants";
 
@@ -7,30 +8,28 @@ import styles from "./Dashboard.module.scss";
 
 import FilterBar from "../components/controls/FilterBar";
 import DateFilter from "../components/controls/DateFilter";
-import {DateFilterOption} from "@gooddata/sdk-ui-filters/esm/DateFilter/interfaces";
+import {LocalesContext, LocalesState, t} from "../contexts/Locales";
 
 const PREFIX = "My Dashboard";
-const NOT_SELECTED = "All time";
+const NOT_SELECTED = "ALL_TIME";
 
 const Dashboard: React.FC = () => {
 	const [state, setState] = useState({
 		selectedFilterOption: defaultDateFilterOptions.allTime as DateFilterOption,
-		excludeCurrentPeriod: false,
-		dashboardName: NOT_SELECTED
+		excludeCurrentPeriod: false
 	});
 
 	const onApply = (selectedFilterOption: DateFilterOption, excludeCurrentPeriod: boolean) => {
 		setState({
 			selectedFilterOption,
-			excludeCurrentPeriod,
-			dashboardName: getDashboardName(selectedFilterOption)
+			excludeCurrentPeriod
 		});
 	};
 
 	return (
 		<Page>
 			<div className={styles.Lead}>
-				<h1>{`${PREFIX} "${state.dashboardName}`}"</h1>
+				<h1>{PREFIX} "<DashboardName selectedFilterOption={state.selectedFilterOption} />"</h1>
 			</div>
 			<FilterBar>
 				<DateFilter
@@ -43,10 +42,23 @@ const Dashboard: React.FC = () => {
 	);
 };
 
-function getDashboardName(selectedFilterOption: any): string {
+const DashboardName: React.FC<{ selectedFilterOption: any }> = (props) => {
+	return (
+		<LocalesContext.Consumer>
+			{(locales) => (
+				<span>{getDashboardName(props.selectedFilterOption, locales)}</span>
+			)}
+		</LocalesContext.Consumer>
+	);
+};
+
+function getDashboardName(selectedFilterOption: any, locales: LocalesState): string {
 
 	if (selectedFilterOption.name) {
 		return selectedFilterOption.name;
+	}
+	if (selectedFilterOption.localIdentifier) {
+		return t(locales, selectedFilterOption.localIdentifier);
 	}
 
 	const ranges = [];
@@ -60,7 +72,7 @@ function getDashboardName(selectedFilterOption: any): string {
 		return ranges.join(" - ");
 	}
 
-	return NOT_SELECTED;
+	return t(locales, NOT_SELECTED);
 }
 
 export default Dashboard;

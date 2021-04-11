@@ -4,6 +4,8 @@ import { BackendProvider } from "@gooddata/sdk-ui";
 import AppRouter from "./routes/AppRouter";
 import { useAuth } from "./contexts/Auth";
 import { WorkspaceListProvider } from "./contexts/WorkspaceList";
+import {LocalesContext, createLocalesState} from "./contexts/Locales";
+import {Locales} from "./constants";
 
 function App() {
     const { backend } = useAuth();
@@ -11,7 +13,9 @@ function App() {
     return (
         <BackendProvider backend={backend}>
             <WorkspaceListProvider>
-                <AppRouter />
+                <LocalesContext.Provider value={createLocalesState(Locales)}>
+                    <AppRouter />
+                </LocalesContext.Provider>
             </WorkspaceListProvider>
         </BackendProvider>
     );

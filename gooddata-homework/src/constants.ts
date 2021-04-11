@@ -186,3 +186,19 @@ export const defaultDateFilterOptions: IDateFilterOptionsByType = {
 		],
 	}
 };
+
+//Default locales for app
+export const Locales = {
+	"ALL_TIME": "All time",
+	"LAST_7_DAYS": "Last 7 days",
+	"LAST_30_DAYS": "Last 30 days",
+	"LAST_90_DAYS": "Lays 90 days",
+	"THIS_MONTH": "This month",
+	"LAST_MONTH": "Last month",
+	"LAST_12_MONTHS": "Last 12 months",
+	"THIS_QUARTER": "This quarter",
+	"LAST_QUARTER": "Last quarter",
+	"LAST_4_QUARTERS": "Last 4 quarters",
+	"THIS_YEAR": "This year",
+	"LAST_YEAR": "Last year"
+}
