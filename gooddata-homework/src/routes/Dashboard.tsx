@@ -78,7 +78,7 @@ function getDashboardName(selectedFilterOption: any, locales: LocalesState): str
 	if (selectedFilterOption.name) {
 		return selectedFilterOption.name;
 	}
-	if (selectedFilterOption.localIdentifier) {
+	if (selectedFilterOption.localIdentifier && locales.locales[selectedFilterOption.localIdentifier]) {
 		return t(locales, selectedFilterOption.localIdentifier);
 	}
 
