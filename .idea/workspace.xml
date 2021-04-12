@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="27604b5c-cdbc-498d-907d-a2ac1088539b" name="Default Changelist" comment="Tests update, simple tests add">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager">
+    <option name="groupingKeys">
+      <option value="directory" />
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitToolBoxStore">
+    <option name="projectConfigVersion" value="2" />
+    <option name="recentBranches">
+      <RecentBranches>
+        <option name="branchesForRepo">
+          <list>
+            <RecentBranchesForRepo>
+              <option name="branches">
+                <list>
+                  <RecentBranch>
+                    <option name="branchName" value="main" />
+                    <option name="lastUsedInstant" value="1618152937" />
+                  </RecentBranch>
+                  <RecentBranch>
+                    <option name="branchName" value="master" />
+                    <option name="lastUsedInstant" value="1618152936" />
+                  </RecentBranch>
+                </list>
+              </option>
+              <option name="repositoryRootUrl" value="file://$PROJECT_DIR$" />
+            </RecentBranchesForRepo>
+          </list>
+        </option>
+      </RecentBranches>
+    </option>
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedIndex" value="2" />
+  </component>
+  <component name="ProjectId" id="1r10R84YGyA5k2xPzcfgGIHdkf0" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="C:/Program Files/nodejs/node" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="ts.external.directory.path" value="D:\Projects\gooddata\gooddata-homework\node_modules\typescript\lib" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Projects\gooddata" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Projects\gooddata\gooddata-homework\src\media" />
+      <recent name="D:\Projects\gooddata\gooddata-homework" />
+    </key>
+  </component>
+  <component name="RunManager" selected="npm.test">
+    <configuration name="test" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/gooddata-homework/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="test" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="testcafe-backend" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/gooddata-homework/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="testcafe-backend" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="testcafe-visual" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/gooddata-homework/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="testcafe-visual" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="testcafe" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/gooddata-homework/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="testcafe" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.test" />
+        <item itemvalue="npm.testcafe-visual" />
+        <item itemvalue="npm.testcafe-backend" />
+        <item itemvalue="npm.testcafe" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="27604b5c-cdbc-498d-907d-a2ac1088539b" name="Default Changelist" comment="" />
+      <created>1618128278339</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1618128278339</updated>
+      <workItem from="1618128279669" duration="26670000" />
+    </task>
+    <task id="LOCAL-00001" summary="First setup commit&#10;&#10;Notes:&#10; .env file is not used for commit, but in this case it will be OK">
+      <created>1618130889566</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1618130889566</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Repair some warnings and non standard css styles.&#10; Maybe is some spelling error?&#10;   - line-height: in; =&gt; line-height: inherit;&#10;   - transition need units specified">
+      <created>1618131878088</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1618131878088</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Add dashboard link into Links component&#10; + tests specs in Links.spec.tsx&#10;Added Dashboard route (it's empty for now)&#10; &#10;Tests on header structure render inside Header.spec.tsx&#10;&#10;Remove Welcome page">
+      <created>1618133938830</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1618133938830</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Added test cafe tests into GIT">
+      <created>1618133969712</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1618133969712</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Simple dashboard component in route to add filter bar with DateFilter and prepared for adding another components&#10;&#10;DateFilter component added, wrapper for @gooddata DateFilter component&#10;FilterBar component for create simple filter bar&#10;&#10;Prepare test specs for FilterBar and DateFilter">
+      <created>1618139183964</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1618139183964</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Added locals context&#10;Component for dashboard name">
+      <created>1618140449751</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1618140449751</updated>
+    </task>
+    <task id="LOCAL-00007" summary="LineChart component&#10;CSS for dashboard for Grid with Chart and Custom component&#10;&#10;Prepare test specs for">
+      <created>1618142876225</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1618142876225</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Caclaultions + select">
+      <created>1618151474485</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1618151474485</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Home + readme">
+      <created>1618152831062</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1618152831062</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Tests update, simple tests add">
+      <created>1618154055616</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1618154055616</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="First setup commit&#10;&#10;Notes:&#10; .env file is not used for commit, but in this case it will be OK" />
+    <MESSAGE value="Repair some warnings and non standard css styles.&#10; Maybe is some spelling error?&#10;   - line-height: in; =&gt; line-height: inherit;&#10;   - transition need units specified" />
+    <MESSAGE value="Add dashboard link into Links component&#10; + tests specs in Links.spec.tsx&#10;Added Dashboard route (it's empty for now)&#10; &#10;Tests on header structure render inside Header.spec.tsx&#10;&#10;Remove Welcome page" />
+    <MESSAGE value="Added test cafe tests into GIT" />
+    <MESSAGE value="Simple dashboard component in route to add filter bar with DateFilter and prepared for adding another components&#10;&#10;DateFilter component added, wrapper for @gooddata DateFilter component&#10;FilterBar component for create simple filter bar&#10;&#10;Prepare test specs for FilterBar and DateFilter" />
+    <MESSAGE value="Added locals context&#10;Component for dashboard name" />
+    <MESSAGE value="LineChart component&#10;CSS for dashboard for Grid with Chart and Custom component&#10;&#10;Prepare test specs for" />
+    <MESSAGE value="Caclaultions + select" />
+    <MESSAGE value="Home + readme" />
+    <MESSAGE value="Tests update, simple tests add" />
+    <option name="LAST_COMMIT_MESSAGE" value="Tests update, simple tests add" />
+  </component>
+</project>
